@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arun San | HR Analytics Professional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #f7f7f7;
+    }
+    .main-layout {
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 350px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 3rem 2rem 2rem 2.7rem;
+      border-right: 1px solid #eee;
+      min-height: 100vh;
+      position: relative;
+    }
+    .sidebar .logo {
+      font-weight: 700;
+      font-size: 2.3rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 2rem;
+      margin-left: 0.15em;
+    }
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      margin-bottom: 3rem;
+    }
+    .sidebar nav a {
+      color: #222;
+      text-decoration: none;
+      font-size: 1.13rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .sidebar nav a.active,
+    .sidebar nav a:hover {
+      color: #111;
+      font-weight: 700;
+      border-bottom: 2px solid #222;
+      padding-bottom: 2px;
+    }
+    .sidebar .footer {
+      margin-top: auto;
+      font-size: 0.92rem;
+      color: #aaa;
+    }
+    .sidebar .footer a {
+      color: #222;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f7f7f7;
+    }
+    .profile-section {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+    .profile-img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      border: 6px solid #eee;
+      background: #fff;
+    }
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.2rem;
+    }
+    .profile-info .name {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.2rem;
+    }
+    .profile-info .desc {
+      font-size: 1.12rem;
+      color: #444;
+      margin-bottom: 0.7rem;
+    }
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+    }
+    .social-icons a {
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      background: #222;
+      border-radius: 8px;
+      color: #fff;
+      text-align: center;
+      line-height: 44px;
+      font-size: 1.5rem;
+      transition: background 0.2s;
+    }
+    .social-icons a:hover {
+      background: #fc575e;
+      color: #fff;
+    }
+    @media (max-width: 900px) {
+      .main-layout {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 2rem 1rem 1rem 1rem;
+        min-height: unset;
+      }
+      .content {
+        padding: 2rem 0;
+      }
+      .profile-section {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .profile-img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="main-layout">
+    <div class="sidebar">
+      <div class="logo">ARUN SAN</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer">
+        &copy; 2025 Arun San<br>
+        Created by <a href="https://github.com/Arunsan16">Arun San</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="profile-section">
+        <img src="image1" alt="Arun San Profile" class="profile-img" />
+        <div class="profile-info">
+          <div class="name">ARUN SAN</div>
+          <div class="desc">I am an HR Analytics Professional.</div>
+          <div class="social-icons">
+            <a href="https://github.com/Arunsan16" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/arunsan" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://twitter.com/yourprofile" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
